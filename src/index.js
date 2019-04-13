@@ -2,11 +2,11 @@ import gray from 'gray-percentage';
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants';
 import verticalRhythm from 'compass-vertical-rhythm';
 
-export const linkColor = '#B8336A';
+export const linkColor = '#f5c9db';
 export const backgroundColor = '#fdf9f9';
 
 const theme = {
-  title: 'ProBono Blog',
+  title: 'ProBono',
   baseFontSize: '20px',
   baseLineHeight: 1.45,
   googleFonts: [],
@@ -24,26 +24,16 @@ const theme = {
     });
     return {
       a: {
-        color: linkColor,
+        color: gray(10),
         textDecoration: 'none',
-        textShadow: `0.03em 0 ${backgroundColor}, -0.03em 0 ${backgroundColor},
-        0 0.03em ${backgroundColor}, 0 -0.03em ${backgroundColor},
-        0.06em 0 ${backgroundColor}, -0.06em 0 ${backgroundColor},
-        0.09em 0 ${backgroundColor}, -0.09em 0 ${backgroundColor},
-        0.12em 0 ${backgroundColor}, -0.12em 0 ${backgroundColor},
-        0.15em 0 ${backgroundColor}, -0.15em 0 ${backgroundColor}`,
-        backgroundImage: `linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0),
-          rgba(0, 0, 0, 0) 1px,
-          ${linkColor} 1px,
-          ${linkColor} 2px,
-          rgba(0, 0, 0, 0) 2px
-        )`,
+        borderBottom: `4px solid ${linkColor}`,
+        background: `linear-gradient(${linkColor}, ${linkColor} 100%) bottom no-repeat`,
+        backgroundPositionY: '110%',
+        backgroundSize: '100% 0',
+        transition: 'background-size .1s'
       },
       'a:hover,a:active': {
-        textShadow: 'none',
-        backgroundImage: 'none',
+        backgroundSize: '100% 20%',
       },
       'h1,h2,h3,h4,h5,h6': {
         marginTop: rhythm(1.5),

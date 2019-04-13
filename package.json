@@ -1,7 +1,7 @@
 {
   "name": "@probono/typography-theme-probono",
   "description": "A theme for Typography.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Daniel Kovacs <kovacsemod@gmail.com>",
   "main": "./dist/index.js",
   "dependencies": {
