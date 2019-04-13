@@ -1,6 +1,6 @@
 {
   "name": "@probono/typography-theme-probono",
-  "description": "A theme for Typography.js",
+  "description": "ProBono Typography.js theme for web and blog.",
   "version": "0.2.0",
   "author": "Daniel Kovacs <kovacsemod@gmail.com>",
   "main": "./dist/index.js",
